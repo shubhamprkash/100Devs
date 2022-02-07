@@ -1,0 +1,35 @@
+/* NO classes or IDs */
+
+/* Ok Boomer 😛 */
+
+/* Please make only "Just kidding!" yellow */
+
+section > h2{
+    color: yellow;
+}
+
+/* Please make only "twitter" red and 20px */
+
+aside > p > a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+/* Please make "Really hot" purple & "Like WILD hot" larger and blue  */
+
+article > h1 + h2{
+    color: purple;
+}
+
+article h2 + h2{
+    font-size: larger;
+    color: blue;
+}
+
+/* Please make only bob and pizza green */
+
+nav > ul + ul > li > a{
+    text-decoration:none;
+    color: green;
+}

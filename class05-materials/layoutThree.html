@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayOut - 3 | 100Devs</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .top, .bottom{
+            /* border: black 2px solid; */
+            height: 20vh;
+        }
+        .middle{
+            border-top: grey 2px solid;
+            border-bottom: grey 2px solid;
+            height: 60vh;
+        }
+        .item-1, .item-4, .item-3{
+            float: left;
+            border-left: solid 2px grey;
+            border-right: solid 2px grey;
+            height: 100%;
+            width: 20%;
+        }
+        .item-1{
+            border-left: none;
+        }
+        .item-4{
+            border: none;
+        }
+        .item-2{
+            float: left;
+            height:100% ;
+            width: 40%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <section class="top"></section>
+        <section class="middle">
+            <div class="item-1"></div>
+            <div class="item-2"></div>
+            <div class="item-3"></div>
+            <div class="item-4"></div>
+        </section>
+        <section class="bottom"></section>
+    </main>
+</body>
+</html>

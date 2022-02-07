@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Solution | Login</title>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            margin: 5% 25%;
+            padding-bottom: 35px;
+            height: max-content;
+            border: 2px solid red;
+            background-color: rgb(118, 223, 217);
+            text-align: center;
+        }
+        header{
+            color:rgb(122, 37, 219);
+        }
+        .logo img{
+            margin-bottom: 25px;
+            border: indigo 5px solid;
+            border-radius: 5%;
+        }
+
+
+        .login-form  input{
+            margin: 10px 0;
+        }
+
+        .login-links{
+            display: block;
+        }
+
+        .margin-up{
+            margin-top: 10px;
+        }
+
+        button{
+            height: 35px;
+            border-radius: 5px;
+        }
+        #login{
+            background-color: rgb(85, 233, 85);
+        }
+        #cancle{
+            background-color: rgb(238, 115, 115);
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Login Here...</h1>
+
+        </header>
+        <section class="logo">
+            <img src="asc.png" alt="company-logo">
+        </section>
+
+        <section class="login-form">
+            <label for ="email">Email: </label>
+            <input type="email" name="email" >
+            <br>
+
+            <label for="Password">Password:</label>  
+            <input type="password" name="password">
+
+            <section class="login-links">
+                <a href="#">Forgot password?</a>
+                <br/>
+               <p class="margin-up"> <a  href="#">Register Now</a></p>
+                <br>
+
+                <button id="login"><b>Login</b></button>
+                <button id="cancle"><b>Cancel</b></button>
+
+            </section>
+
+            
+
+        </section>
+
+    </main>
+</body>
+</html>
