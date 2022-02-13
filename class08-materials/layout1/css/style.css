@@ -1,9 +1,12 @@
 /* Box Model Hack */
+
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
+/* 
+/* Clear fix hack 
 .clearfix:after {
      content: ".";
      display: block;
@@ -11,7 +14,7 @@
      visibility: hidden;
      line-height: 0;
      height: 0;
-}
+} */
 
 .clear {
 	clear: both;
@@ -22,19 +25,138 @@
 /*******************************************/
 
 body {
-
+font-family: sans-serif;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+
+/***************************** Nav -bar **********************/
+nav{
+  /* border: 2px solid red; */
+  /* display: inline-block; */
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid rgb(165, 164, 164) ;
+}
+
+input{
+  background: rgb(238, 238, 238);
+  border: none;
+  height: 35px;
+  border-radius: 7px;
+  
+}
+
+input::placeholder{
+  color: blue;
+  opacity: 1;
+  padding-left: 10px ;
+  font-weight: 700;
+}
+
+.left-nav{
+float: left;
+margin:1em 0 auto 1em;
 
 }
 
-footer {
+#droplist{
+border: none;
+color: blue;
+font-weight: 700;
+margin-right: 30px;
+}
 
+.nav-logo{
+  position: absolute;
+  left: 45%;
+  /* border: 2px solid yellow; */
+  /* float:right; */
+}
+
+.right-nav{
+  float: right;
+}
+
+ul li{
+  display: inline-block;
+  
+  margin: 1.5em;
+  list-style: none;
+}
+
+a{
+  
+  text-decoration: none;
+  font-weight: 600;
+  color: blue;
+}
+
+
+
+
+
+
+
+/********************  *******************************/
+
+
+
+.header-main {
+  /* border: 2px solid green; */
+  height: auto;
+  padding-top: 5rem;
+
+}
+
+.left-main{
+  float: left;
+  height: 100%;
+  width: 50%;
+
+}
+#bigimg{
+  max-width: 500px;
+  max-height: 600px;
+  padding-left: 30px
+}
+
+
+
+.right-main{
+  float:right;
+  height: 100%;
+  width: 50%;
+ text-align:start;
+ padding:50px;
+ line-height: 2rem;
+ 
+}
+
+.right-main h1{
+  line-height: 3.2rem ;
+  font-size: 2.5rem;
+}
+
+.right-main p{
+  margin-top: 15px;
+}
+
+
+.btn{
+  margin-top: 2rem;
+  background: rgb(58, 58, 255);
+  border: 0;
+  color: azure;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  font-weight: 600;
+  /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 /******************************************
