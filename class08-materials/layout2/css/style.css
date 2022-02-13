@@ -1,41 +1,81 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+body{
+  box-sizing: border-box;
 }
 
 .clear {
 	clear: both;
 }
 
+.flo-left{
+  float: left;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-body {
+nav{
 
+  background: black;
+  height: 5vh;
+  width: 100%;
+  color: white;
 }
+
+.logo-img{
+  padding-top: 5px ;
+}
+
+nav .links{
+   display: inline-block;
+   padding: 8px ;
+  
+ }
+
+nav li{
+  border-left: 1px solid white;
+}
+
+nav a{
+   color: white;
+ }
+
+.signin{
+
+  
+}
+
+
+
+ .searchbar{
+   float: right;
+   /* padding:8px; */
+ }
+
+ .searchbar input{
+   height: 30px;
+   border: none;
+  
+ }
+
+ input::placeholder
+ {
+   color: black;
+   font-weight: 600;
+ }
+
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
-
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
