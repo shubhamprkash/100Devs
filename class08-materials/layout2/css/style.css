@@ -31,6 +31,11 @@ nav{
 
 .logo-img{
   padding-top: 5px ;
+  border-right:solid white;
+}
+
+.nav-links{
+  border-right: 1px solid white;
 }
 
 nav .links{
@@ -48,20 +53,22 @@ nav a{
  }
 
 .signin{
+  padding: 10px;
 
-  
 }
 
 
 
  .searchbar{
    float: right;
-   /* padding:8px; */
+   padding-top:8px;
+   margin-right:10px;
  }
 
  .searchbar input{
    height: 30px;
    border: none;
+   
   
  }
 
@@ -74,8 +81,26 @@ nav a{
 
 
 /******************************************
-/* LAYOUT
+/* top page
 /*******************************************/
+
+.top-page{
+height: 40vh;
+}
+
+.big-article{
+  background-image: url("../src/isreal-uae.jpg");
+  height: 100%;
+   float: left;
+   background-size: 500px 600px;
+}
+
+
+
+
+
+
+
 
 /******************************************
 /* ADDITIONAL STYLES

@@ -1,42 +1,129 @@
-/* Box Model Hack */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 20px 0;
+}
+
+h4 {
+    color: #999999;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+img {
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    padding: 10px 0;
+}
+
+.logo {
+    height: 60px;
+    width: 100px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
+header ul {
+    list-style: none;
 }
 
+header ul li {
+    padding: 10px 0;
+    font-size: 25px;
+}
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+header ul li a {
+    text-decoration: none;
+    color: #777777;
+}
+
 header {
-
+    width: 20%;
+    float: left;
+    height: 100%;
+    padding: 20px;
 }
 
-footer {
-
+header form input {
+    padding: 15px 0;
+    border: 0;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+header form input[type="text"]{
+    font-size: 20px;
+}
+
+header form input::placeholder{
+    font-size: 25px;
+}
+
+#span-heading {
+    font-size: 25px;
+    color: #deac47;
+}
+
+header .join {
+    display: block;
+    color: #f6a623;
+    font-size: 25px;
+    padding: 5px 0;
+    font-weight: 500;;
+}
+
+section {
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+
+section p {
+    margin-bottom: 10px;
+    color: #999999;
+}
+
+section.aside span,
+section.three-column span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section.aside {
+    width: 30%;
+    padding: 0 30px;
+}
+
+section.three-column {
+    width: 80%;
+    margin-left: 20%;
+    clear: left;
+}
+section.three-column div {
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
