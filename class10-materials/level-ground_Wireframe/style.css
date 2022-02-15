@@ -1,0 +1,416 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* Prevent white space on the right side to appear when screensize is small */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*************
+/* HEADER
+/*************/
+
+/* Set background color and font-style */
+header {
+    background: rgb(105, 118, 136);
+    font-family: Arial, sans-serif;
+}
+/* Give nav margin on the right and left side */
+nav {
+    width: 91vw;
+    margin: 0 auto;
+}
+/* Set all nav elements as inline-block */
+nav * {
+    display: inline-block;
+}
+/* Set width of the three main nav sections */
+.nav-left, .nav-right {
+    width: 33%;
+}
+.nav-center {
+    width: 33%;
+}
+/* Remove list padding */
+.nav-left {
+    padding: 0;
+}
+/* Remove link underline and bullets in list, set color to white and give right padding */
+.nav-left a {
+    text-decoration: none;
+    color: white;
+    padding-right: 1rem;
+}
+/* Position logo on the center, and set nav height */
+.nav-center {
+    text-align: center;
+    margin: 1rem 0;
+}
+/* Adjust image size and vertically align wrt parent div */
+.nav-center img {
+    width: 3rem;
+    vertical-align: middle;
+}
+/* Position donation on the right most */
+.nav-right {
+    text-align: end;
+}
+/* Customize donation button */
+.nav-right span {
+    padding: 10px 15px;
+    color: rgb(105, 118, 136);
+    background: white;
+    border-radius: 6px;
+}
+
+/*************
+/* 1ST SECTION
+/*************/
+
+/* Set color, font, background, and height of section */
+section.intro {
+    background:  rgb(105, 118, 136);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 8rem;
+}
+
+/* Give margin to section content */
+section > .intro-content {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Adjust size and spacing of h1 */
+.intro-content > h1 {
+    font-size: 5.5rem;
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem; 
+}
+/* Adjust size and spacing of h2 */
+.intro-content > h2 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 2.6rem;
+    margin-bottom: 4rem;
+}
+/* Adjust the size and color of play button, also align vertically */
+div.play > .icon {
+    color: white;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+/* Adjust the size and spacing of span, also align vertically */
+div.play > span {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-left: .7rem;
+} 
+
+/*************
+/* 2ND SECTION
+/*************/
+
+/* Set color, backgrounf, font and height of why section */
+section.why {
+    background: white;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+/* Set margin of why section */
+section > .why-content {
+    width: 47vw;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Adjust size and spacing of why */
+.why-content > h2 {
+    font-size: 2.7rem;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+}
+/* Adjust size and spacing of paragraph */
+.why-content > p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(81, 83, 88);
+    padding-bottom: 8rem;
+}
+
+/*************
+/* 3RD SECTION
+/*************/
+
+/* Set color, background, font and height of visit section */
+section.visit {
+    background: rgb(221, 223, 226);
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+/* Set margin of visit section */
+section > .visit-content {
+    padding-top: 7.7rem;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Float two sections so that they sit beside each other */
+.visit-content section {
+    width: 50%;
+    float: left;
+}
+/* Set distance between two sections */
+.visit-content section:first-child {
+    padding-right: 1.5rem;
+}
+.visit-content section:last-child {
+    padding-left: 1.5rem;
+}
+/* Adjust size of image */
+.visit-content img {
+    width: 80%;
+}
+/* Adjust size of title */
+.visit-content h3 {
+    font-size: 1.8rem;
+}
+/* Adjust size and style of text */
+.visit-content p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(81, 83, 88);
+}
+/* Customize spans */
+.click-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: rgb(81, 83, 88);
+    border: 2px solid rgb(185, 187, 188);
+    padding: 1rem 3.2rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/* Give bottom padding */
+.visit-content span {
+    margin-bottom: 7rem;
+}
+
+/*************
+/* VOLUNTEER
+/*************/
+
+/* Set color, background, font and height of volunteer section */
+section.volunteer {
+    background: white;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+/* Set margin of why section */
+section > .volunteer-content {
+    width: 47vw;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Adjust size and spacing of volunteer */
+.volunteer-content > h2 {
+    font-size: 2.7rem;
+    padding-top: 6rem;
+    margin-bottom: 2rem;
+}
+/* Adjust size and spacing of paragraph */
+.volunteer-content > p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(81, 83, 88);
+}
+/* Give bottom padding */
+.volunteer-content > span {
+    margin-bottom: 10rem;
+}
+
+
+/*************
+/* FOOTER
+/*************/
+
+/* Set color, background, font and height of volunteer section */
+footer {
+    background: rgb(24, 31, 41);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    height: 25rem;
+}
+/* Sets the margin of footer */
+.footer-content {
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 1.9rem;
+}
+/* Float the links and adress so that they sit side by side */
+.float-container section {
+    width: 50%;
+    float: left;
+}
+/* Push links to the leftmost */
+.links {
+    text-align: start;
+    margin-bottom: 1.5rem;
+}
+/* Customize icons */
+.links > i {
+    display: inline-block;
+    font-size: 2rem;
+    padding-right: 1.7rem;
+}
+/* Customize link titles*/
+.links > .footer-title {
+    display: inline-block;
+    width: 100%;
+    color: rgb(85, 95, 113);
+    margin-top: 1.5rem;
+}
+/* Customize links */
+.links > .footer-link {
+    display: inline-block;
+    padding-right: 1.6rem;
+}
+/* Push address to the rightmost */
+.address {
+    text-align: end;
+}
+/* Make all elements of adress inline block */
+.address * {
+    display: inline-block;
+    width: 100%;
+}
+/* Make margin before the actual adress */
+.address > span:first-child {
+    margin-bottom: 1.5rem;
+}
+/* Change the color of the actual address */
+.address > .loc {
+    color: rgb(200, 200, 200)
+}
+/* Float second foter container */
+.float-container2 > p, .float-container2 > div {
+    float: left;
+}
+/* Give width for each section */
+.float-container2 > p {
+    width: 90%;
+}
+.float-container2 > div {
+    width: 10%;
+}
+/* Push image to the right */
+div.footer-logo {
+    text-align: end;
+}
+/* Give solid white border */
+.float-container2 {
+    border-top: 2px solid white;
+}
+/* Customize text */
+.float-container2 p {
+    display: inline-block;
+    margin: 0;
+    padding: 1.5rem 0;
+}
+/* Customize image */
+.float-container2 img {
+    display: inline-block;
+    width: 2.5rem;
+    padding-top: 1.5rem;
+}
+/* Give bottom padding */
+.float-container2 img {
+    padding-bottom: 5rem;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* For tablets */
+@media (min-width: 600px) and (max-width: 1000px) {
+    /* Change nav sizes */
+    .nav-left, .nav-right {
+         width: 44%;
+    }
+    .nav-center {
+         width: 10%;
+    }
+    /* Adjust margin of why and volunteer */
+    section > .volunteer-content,  section > .why-content {
+         width: 70vw;
+    }
+}
+
+/* For mobiles */
+
+@media screen and (max-width: 599px) {
+    /* Make font sizes smaller */
+    html {
+         font-size: 55%;
+    }
+    /* Change nav sizes */
+    .nav-left, .nav-right {
+         width: 46.5%;
+    }
+    .nav-center {
+         width: 5%;
+    }
+    /* Add margin on top */
+    header {
+         padding-top: 1rem;
+    }
+    /* Adjust margin of why and volunteer */
+    section > .volunteer-content,  section > .why-content {
+         width: 70vw;
+    }
+    /* Disable float on why section */
+    .visit-content section {
+         width: 100%;
+         float: none;
+    }
+    /* Remove distance between the two content */
+    .visit-content section:first-child {
+         padding-right: 0;
+    }
+    .visit-content section:last-child {
+         padding-left: 0;
+    }
+}
