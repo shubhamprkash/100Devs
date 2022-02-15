@@ -1,0 +1,511 @@
+/*
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS & FONTS
+  ========================================
+*/
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  color: #1a202e;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+header, .sectionOne, .sectionEnd, .manyBoxes{
+  color: white;
+}
+
+button, span, header, h3, h4, h5{
+  text-transform: uppercase;
+}
+
+h1, h2{
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 5rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+p{
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+button{
+  font-weight: 700;
+  /* letter-spacing: 1em; */
+}
+
+h3, header li, .reviewSection span{
+  font-weight: 500;
+  color: #6f7c8d;
+}
+
+h4, h5{
+  font-weight: bold;
+}
+
+.reviewSection p, .sectionEnd p{
+  font-size: 2em;
+}
+
+/*
+  ========================================
+  BACKGROUNDS
+  ========================================
+*/
+header, .manyBoxes{
+  background: #1a202e;
+}
+
+.sectionOne{
+  background: url("./src/bg.png") center no-repeat;
+  background: cover;
+}
+
+body, footer{
+  background: #f6f7fa;
+}
+
+.reviewSection{
+  background: white;
+}
+
+.sectionEnd{
+  background: linear-gradient(45deg, #232c3b, #1a202e);
+}
+
+.slash{
+  background: url("/src/white-blu-bg.png") center no-repeat;
+  background: cover;
+}
+
+
+/*
+========================================
+SPECIFIC ITEMS
+========================================
+*/
+.placeholder{
+  width: 600px;
+  height: 400px;
+}
+
+.companyLogo{
+  width: auto;
+  height: 30px;
+}
+
+button{
+  color: white;
+  background: #1a202e;
+  border: none;
+  border-radius: 3px;
+  padding: 1.5rem 3rem;
+}
+
+.grey{
+  background: #dee0e9;
+  color: #3a404e;
+}
+
+.white{
+  background: white;
+  color: #3a404e;
+}
+
+ion-icon{
+  font-size: 2rem;
+  --ionicon-stroke-width: 5rem;
+}
+
+.emptyBox{
+  width: 250px;
+  height: 200px;
+  background: #dde0e9;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionFourth .cool{
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionFourth .cool ion-icon{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.miniBoxes{
+  width: 250px;
+  height: 300px;
+  background: white;
+  text-align: center;
+  padding-bottom: 1rem;
+  line-height: 3rem;
+  margin: 1rem;
+}
+
+.arrow{
+  font-size: 8rem;
+}
+
+.sectionFourth ion-icon{
+  font-size: 4rem;
+}
+
+.square{
+  font-size: 7rem !important;
+}
+
+/*
+  ========================================
+  HEADER & FOOTER
+  ========================================
+*/
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+}
+
+.iconWrapper{
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 2;
+}
+
+header nav{
+  flex-grow: 3;
+  align-items: center;
+}
+
+header ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header li{
+  display: inline-block;
+}
+
+footer{
+  display:flex;
+}
+
+footer{
+  padding: 0;
+}
+
+.footerList li{
+  padding: 5% 0;
+  flex-direction: column;
+}
+
+footer section{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 1;
+  width: 100px;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+  ========================================
+  MAIN LAYOUT
+  ========================================
+*/
+body *{
+  margin: 0 auto;
+  content: contain;
+}
+
+.pad{
+  padding: 2% 10%;
+}
+
+.sectionOne{
+  display: flex;
+  padding: 5% 10%;
+}
+
+.mainText{
+  display: block;
+  text-align: left;
+  flex: 0 0 50%;
+  padding-right: 10%;
+}
+
+.mainText *, .reviewSection *{
+  padding-bottom: 2rem;
+}
+
+.reviewSection p{
+  padding: 0 1%;
+}
+
+.contentContainer{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.buttonContainer{
+  display:flex;
+  padding-top: 5%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.emptyImage{
+  display: flex;
+  flex-grow: 1;
+}
+
+.iconAndWords{
+  display: inline-block;
+}
+
+.sectionTwo,.sectionThird, .sectionFourth .sectionFive{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionFive, .sectionFourth{
+  display: flex;
+  justify-content: space-between;
+}
+
+.alltheboxes{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: space-between;
+  flex-flow: row wrap;
+  flex: 0 0 50%;
+}
+
+.cool{
+  color: #1a202e;
+  background: white;
+  padding: 3rem;
+  padding-bottom: 2rem;
+  width: 400px;
+  height: 178px;
+  border-radius: 8px;
+  margin: 2rem;
+}
+
+.cool *{
+  padding-bottom: 1rem;
+}
+
+
+.boxandtext .minitext{
+  padding-left: 2rem;
+}
+
+.sectionFourth .cool{
+  width: auto;
+  height: auto;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manyBoxes{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.sectionEnd{
+  display: flex;
+  justify-content: center;
+}
+
+.sectionFourth .mainText,.sectionThird .mainText{
+  padding: 0 0 0 5%;
+}
+
+
+/*
+  ========================================
+  MINI LAYOUT
+  ========================================
+*/
+.companies{
+  display: flex;
+  flex-grow: .5;
+  justify-content: flex-end;
+}
+
+
+
+.aloneBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center.small, .reviewSection{
+  text-align: center;
+}
+
+.left.small{
+  text-align: left;
+}
+
+.reviewsWrapper{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  ========================================
+  INTERACTIVE
+  ========================================
+*/
+a:visited, a:link{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover{
+  background: #3a404e;
+  transition: 0.3s;
+  transform: translateX(5px);
+}
+
+.white:hover, .grey:hover{
+  background: #dee0e9;
+  color: white;
+}
+
+.emptyBox:hover{
+  background: #1a202e;
+  color: white;
+  transition: 0.5s;
+}
+
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media (min-width: 1251px) and (max-width: 3000px){
+  .pad{
+    padding: 5% 10%;
+  }
+}
+@media (max-width:1250px){
+  .sectionTwo .mainText{
+    padding: 5% 0 5% 0;
+    flex-direction: row;
+  }
+  .sectionTwo{
+    display: flex;
+    flex-direction: row;
+  }
+  .tablet, .placeholder, .emptyImage{
+    display: none;
+  }
+  .slash{
+    background-image: none;
+  }
+  .mainText{
+    display: block;
+    text-align: left;
+    flex: 0 0 100%;
+    padding-right: 0;
+  }
+}
