@@ -1,0 +1,641 @@
+/*    CSS RESET CODE
+-------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/*    NAVBAR STYLES
+-----------------------*/
+header {
+    /* Vertical Alignment ~ Parent Styles */
+    position: relative;
+    color: white;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    font-weight: 500;
+    height: 40px;
+    text-align: center;
+    padding: 0 10%;
+}
+nav {
+    margin: 0 auto;
+
+    /* Vertical Alignment ~ Child Styles */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 100%;
+}
+nav > a {
+    /* LINK STYLES*/
+    color: white;
+    list-style: none;
+    text-decoration: none;
+
+    /* POSITIONING */
+    height: 100%;
+    top: 0; bottom: 0;
+    padding: 10.4px 1.4%;
+    border-right: .01px solid grey;
+    border-bottom: 1px solid grey;
+}
+nav > a:first-of-type {
+    border-bottom: none;
+}
+nav > a:last-of-type {
+    padding-left: 1%;
+    padding-right: 6%;
+}
+
+
+/* BBC LOGO STYLES 
+-------------------*/
+
+.logo {
+    padding-right: .8em;
+}
+.logo svg {
+    margin-bottom: -.4em;
+}
+
+
+/* SIGN-IN BAR STYLES
+----------------------*/
+
+.sign-in {
+    padding-left: .2em;
+    padding-right: 6%;
+}
+.sign-in .log-in-logo {
+    font-size: 1.8em;
+    margin-bottom: -.3em;
+    padding: 0 .2em;
+}
+
+
+/* SEARCH BAR STYLES 
+--------------------*/
+
+.search-bar {
+    display: inline-block;
+    padding-left: .4em;
+    padding-bottom: .7%;
+}
+.search-bar input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 12em;
+    background-color: white;
+    padding: .3em;
+    border-radius: 0;
+    padding-right: 0;
+    border: none;
+}
+.search-bar button {
+    /* Vertical Alignment ~ Child Styles */
+    position: relative;
+    top: 50%;
+    transform: translateY(27%);
+
+    color: white;
+    border-radius: 0;
+    border: none;
+    background-image: url(https://nav.files.bbci.co.uk/searchbox/b84fc15ce9409a4d9968b7ab553412f6/img/gel-icon-search-dark.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    height: 1.95em;
+    width: 1.8em;
+}
+
+
+/* HOVER LINK HIGHLIGHTS 
+(for the rainbow underlines)
+----------------------------*/
+
+.sign-in:hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid rgb(34, 142, 204);
+}
+nav a:nth-child(3):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+nav a:nth-child(4):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid red;
+}
+nav a:nth-child(5):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid yellow;
+}
+nav a:nth-child(6):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid blue;
+}
+nav a:nth-child(7):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid rgb(118, 118, 214);
+}
+nav a:nth-child(8):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid green;
+}
+nav a:nth-child(9):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid navy;
+}
+nav a:nth-child(10):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid purple;
+}
+nav a:nth-child(11):hover {
+    padding-bottom: 0.5em;
+    border-bottom: 5px solid white;
+}
+
+
+/* BODY LAYOUT */
+
+/* HEADLINE ARTICLES 
+--------------------*/
+
+main {
+    padding: 2% 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+main a {
+    color: white;
+}
+h2 {
+    font-size: 1.3em;
+    padding-bottom: .5em;
+}
+main h2:nth-of-type(1) {
+    float: left;
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+main h2:nth-of-type(2) {
+    float: right;
+    color: rgb(160, 160, 160);
+}
+article {
+    clear: both;
+}
+.headline-articles {
+    height: 275px;
+}
+article.main-article {
+    margin-right: 1%;
+    float: left;
+    clear: both;
+    width: 49%;
+    height: 100%;
+
+    /* ARTICLE BACKGROUND IMAGES */
+    /* background: url(../images/BBC-mainarticle-img.jpg);
+    background-size: cover; */
+}
+article.main-article img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(85%);
+    z-index: -10;
+}
+.main-article .text-wrap {
+    display: block;
+    transform: translateY(-110%);
+    padding-left: 2%;
+    z-index: 10;
+}
+.main-article .text-wrap h3 {
+    font-weight: 500;
+    font-size: 2em;
+    padding-bottom: 2%;
+}
+.main-article .text-wrap p {
+    color: rgb(240, 236, 236);
+    font-weight: 300;
+    padding-bottom: 2%;
+}
+article.main-article > a {
+    height: 100%;
+    width: 100%;
+}
+.category {
+    font-size: .8em;
+    color: rgb(197, 197, 197);
+    padding-left: .4em;
+    border-left: 3px solid red;
+}
+.sports-category {
+    border-left: 3px solid yellow;
+}
+.side-headlines {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.side-headlines article:nth-of-type(1) {
+    margin-bottom: 1.5%;
+    float: left;
+    width: 49%;
+    height: 48.75%;
+
+    /* ARTICLE BACKGROUND IMAGES */
+    /* background: url(../images/BBC-sidearticle-img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.side-headlines article:nth-of-type(2) {
+    margin-bottom: 1.5%;
+    float: right;
+    width: 49%;
+    height:48.75%;
+    clear: right;
+
+    /* ARTICLE BACKGROUND IMAGES */
+    /* background: url(../images/BBC-sidearticle-img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.side-headlines article:nth-of-type(3) {
+    float: left;
+    width: 49%;
+    height: 48.75%;
+
+    /* ARTICLE BACKGROUND IMAGES */
+    /* background: url(../images/BBC-sidearticle-img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.side-headlines article:nth-of-type(4) {
+    float: right;
+    width: 49%;
+    height: 48.75%;
+    clear: right;
+
+    /* ARTICLE BACKGROUND IMAGES */
+    /* background: url(../images/BBC-sidearticle-img4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.side-headlines img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+    z-index: -10;
+}
+.side-headlines .text-wrap {
+    display: block;
+    transform: translateY(-120%);
+    padding-left: 3%;
+    z-index: 10;
+}
+.side-headlines .text-wrap h3 {
+    padding-bottom: 2%;
+}
+
+
+/* NEWS SUBHEADING 
+-------------------*/
+
+.news {
+    margin-top: 6%;
+    height: 350px;
+}
+.news-articles {
+    height: 100%;
+}
+.news h2 {
+    padding: 0;
+    margin-top: 2%;
+    padding-left: .2em;
+    margin-bottom: 1em;
+    border-left: 3px red solid;
+}
+.news h2 > a {
+    color: rgb(80, 80, 80);
+}
+.news article {
+    height: 100%;
+    width: 32.66%;
+}
+.news-articles article a {
+    color: black;
+}
+.news-articles article a:last-of-type {
+    color: black;
+}
+.news article:first-of-type{
+    float: left;
+}
+.news article:nth-of-type(2) {
+    float: left;
+    margin: 0 1%;
+    clear: none;
+}
+.news article:last-of-type{
+    float: right;
+    clear: none;
+}
+.news article img {
+    width: 100%;
+    height: 65%;
+    padding-bottom: 2%;
+}
+.news .content-header {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 4%;
+}
+.news a.content-catgeory {
+    color: rgb(80, 80, 80);
+    font-size: .8em;
+    border-left: 3px solid red;
+    padding-left: 1%;
+}
+.para{
+    text-align:start;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* SPORTS SUBHEADING 
+---------------------*/
+
+.sports {
+    margin-top: 8%;
+    height: 320px;
+}
+.news-articles {
+    height: 100%;
+}
+.sports h2 {
+    padding: 0;
+    padding-left: .2em;
+    margin-bottom: .5em;
+    border-left: 3px yellow solid;
+}
+.sports h2 > a {
+    color: rgb(80, 80, 80);
+}
+
+
+/* REACTIVE STYLES
+------------------*/
+
+@media screen and (max-width: 1425px) {
+    header{
+        padding: 0 5%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    header{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1145px) {
+    .nav-link {
+        padding: 10.4px .8%;
+    }
+}
+@media screen and (min-width: 1050px) {
+    main {
+        padding: 4% 10%;
+    }
+    .headline-articles{
+        height:350px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    main {
+        padding: 3% 18%;
+    }
+    .headline-articles{
+        height: 380px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .search-bar input {
+        display: none;
+    }
+    .search-bar button {
+        border-radius: 5px;
+    }
+    .sign-in {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .sign-in span {
+        display: none;
+    }
+}
+@media screen and (max-width: 850px) {
+    article.main-article {
+        margin: 0 auto;
+        width: 90%;
+        height: 350px;
+        float: none;
+        padding-top: 2%;
+    }
+    .side-headlines {
+        float: none;
+        clear: both;
+        padding-top: 5%;
+        margin: 0 auto;
+        width: 90%;
+        height: 400px;
+    }
+    .news-articles {
+        height: 200px;
+    }
+    .sports {
+        clear: both;
+    }
+}
+@media screen and (max-width: 660px) {
+    nav a:nth-child(10) {
+        display: none;
+    }
+
+    nav a:nth-child(11) {
+        padding-right: 1%;
+    }
+
+    .side-headlines {
+        height: 300px;
+    }
+
+    .news {
+        margin: 0 auto;
+        padding-top: 5%;
+
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .news-articles {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .news .news-articles article {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+        height: 400px;
+        margin-bottom: -5%;
+    }
+}
+@media screen and (max-width: 590px) {
+    nav a:nth-child(9) {
+        display: none;
+    }
+}
+@media screen and (max-width: 525px) {
+    nav a:nth-child(8) {
+        display: none;
+    }
+
+    main section > h2 {
+        padding-top: 2%;
+        font-size: 1em;
+    }
+
+    article.main-article {
+        height: 225px;
+    }
+
+    .side-headlines {
+        font-size: .7em;
+        height: 250px;
+    }
+
+    article.main-article .text-wrap {
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
+    article.main-article .text-wrap h3 {
+        font-size: 1.2em;
+    }
+    article.main-article p {
+        display: none;
+    }
+
+    .news .news-articles article {
+        height: 250px;
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width: 470px) {
+    nav a:nth-child(7) {
+        display: none;
+    }
+
+    main section > h2 {
+        padding-top: 2%;
+        font-size: 1em;
+    }
+
+    article.main-article {
+        height: 225px;
+        width: 98%;
+    }
+
+    .side-headlines {
+        font-size: .7em;
+        width: 98%;
+        height: 250px;
+    }
+
+    article.main-article .text-wrap {
+        padding-left: 4%;
+        padding-bottom: 2%;
+    }
+    article.main-article .text-wrap h3 {
+        font-size: 1.2em;
+    }
+    article.main-article p {
+        display: none;
+    }
+
+    .news .news-articles article {
+        height: 250px;
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width: 400px) {
+    nav a:nth-child(6) {
+        display: none;
+    }
+}
+@media screen and (max-width: 370px) {
+    nav a:nth-child(3) {
+        display: none;
+    }
+    
+    main section > h2:nth-of-type(2) {
+        clear: left;
+        float: none;
+    }
+}

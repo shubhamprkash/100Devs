@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hunter Faulkner">
+    <meta name="date" content="1/20/2022">
+    <title>BBC Clone</title>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylenew.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <a class="logo" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="20"><link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-custom-link"/><link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-general-link"/><style xmlns="" lang="en" type="text/css" id="dark-mode-custom-style"/><style xmlns="" lang="en" type="text/css" id="dark-mode-native-style"/><path d="M73 0v21H52V0h21ZM47 0v21H26V0h21ZM21 0v21H0V0h21Zm42.53 4.468c-.94 0-1.787.14-2.543.42a5.465 5.465 0 0 0-1.946 1.215A5.312 5.312 0 0 0 57.8 8.006c-.287.74-.43 1.568-.43 2.486 0 .94.138 1.784.414 2.534.276.75.673 1.385 1.192 1.903a5.17 5.17 0 0 0 1.905 1.19c.75.275 1.595.413 2.533.413a8.49 8.49 0 0 0 2.02-.235 6.778 6.778 0 0 0 1.69-.64v-2.25a6.254 6.254 0 0 1-3.362.955c-.795 0-1.471-.151-2.029-.453a3.009 3.009 0 0 1-1.275-1.32c-.292-.577-.439-1.277-.439-2.097 0-.82.152-1.517.456-2.09.303-.571.74-1.008 1.308-1.31.568-.303 1.256-.454 2.062-.454.585 0 1.142.078 1.672.235.53.156 1.021.386 1.474.688v-2.3a6.828 6.828 0 0 0-1.614-.59 8.131 8.131 0 0 0-1.847-.203Zm-27.19.126h-4.402v11.812h4.674c.925 0 1.717-.137 2.377-.413.659-.275 1.167-.666 1.523-1.173.356-.506.535-1.112.535-1.817 0-.716-.184-1.324-.55-1.826-.368-.5-.897-.867-1.588-1.098.5-.242.877-.57 1.133-.983.255-.413.382-.9.382-1.462 0-.98-.356-1.732-1.068-2.256-.713-.522-1.718-.784-3.016-.784Zm-26.071 0H5.866v11.812h4.674c.925 0 1.718-.137 2.377-.413.66-.275 1.167-.666 1.524-1.173.356-.506.534-1.112.534-1.817 0-.716-.183-1.324-.55-1.826-.367-.5-.896-.867-1.588-1.098.5-.242.878-.57 1.133-.983.255-.413.383-.9.383-1.462 0-.98-.356-1.732-1.069-2.256-.712-.522-1.718-.784-3.015-.784ZM36.42 11.3c1.457 0 2.186.54 2.186 1.62 0 .506-.192.894-.574 1.164-.383.27-.931.405-1.644.405h-2.073V11.3h2.105Zm-26.071 0c1.457 0 2.185.54 2.185 1.62 0 .506-.191.894-.574 1.164-.383.27-.93.405-1.643.405H8.243V11.3h2.106Zm25.768-4.79c1.266 0 1.899.467 1.899 1.403 0 .485-.163.862-.487 1.132-.325.27-.795.405-1.412.405h-1.802V6.51h1.802Zm-26.071 0c1.265 0 1.898.467 1.898 1.403 0 .485-.162.862-.486 1.132-.325.27-.796.405-1.412.405H8.243V6.51h1.803Z" fill="#fff" fill-rule="nonzero"/></svg>            
+        </a>
+        <a class="sign-in" href="#"><ion-icon class="log-in-logo" name="contact"></ion-icon><span>Sign In</span></a><!--
+        --><a class="nav-link" href="#"><span>Home</span></a><!--
+        --><a class="nav-link" href="#">News</a><!--
+        --><a class="nav-link" href="#">Sport</a><!--
+        --><a class="nav-link" href="#">Reel</a><!--
+        --><a class="nav-link" href="#">Worklife</a><!--
+        --><a class="nav-link" href="#">Travel</a><!--
+        --><a class="nav-link" href="#">Future</a><!--
+        --><a class="nav-link" href="#">Culture</a><!--
+        --><a href="#">More</a>
+        <form class="search-bar">
+            <input type="text" value="Search" /><!--
+            --><button></button>
+        </form>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to BBC.com</h2>
+      <h2>Monday, 15 February</h2>
+      <div class="headline-articles">
+        <article class="main-article">
+          <a class="article-link" href="#">
+            <img src="../images/isreal-uae.jpg" alt="National Leaders Background" /> <!-- Maybe change to article block background with CSS -->
+            <div class="text-wrap">
+              <h3>Israel and UAE strike historic peace deal</h3>
+              <p class="content-description">Israel and the UAE to normalise relation, making the third
+                Israel-Arab peace deal.</p> 
+              <a class="category" href="#">MIDDLE EAST</a>
+            </div>
+          </a>
+        </article>
+          <section class="side-headlines">
+            <article class="side-article">
+              <a class="article-link" href="#">
+                <img src="../images/BBC-sidearticle-img1.jpg" alt="Canada-US Flags Background" /> <!-- Maybe change to article block background with CSS -->
+                <div class="text-wrap">
+                  <h3><a href="#">A Ukrainian city unifies against Russia's threats</a></h3>
+                  <a class="category" href="#">EUROPE</a>
+                </div>
+              </a>
+            </article>
+            <article class="side-article">
+              <a class="article-link" href="#">
+                <img src="../images/BBC-sidearticle-img2.jpg" alt="Office Worker Background" /> <!-- Maybe change to article block background with CSS -->
+               <div class="text-wrap">
+                  <h3>Canada police clear remaining bridge protestors<a href="#"></a></h3>
+                  <a class="category" href="#">US &amp; CANADA </a>
+               </div>
+              </a>
+            </article>
+            <article class="side-article">
+              <a class="article-link" href="#">
+                <img src="../images/BBC-sidearticle-img3.jpg" alt="Covid Vaccine Production Background" /> <!-- Maybe change to article block background with CSS -->
+                <div class="text-wrap">
+                  <h3><a href="#">Super Bowl 56: LA Rams v Cincinnati Bengals - watch &amp; follow text</a></h3>
+                  <a class="category sports-category" href="#">AMERICAN FOOTBALL</a>
+                </div>
+              </a>
+            </article>
+            <article class="side-article">
+              <a class="article-link" href="#">
+                <img src="../images/BBC-sidearticle-img4.jpg" alt="Black and White Headshot Background" /> <!-- Maybe change to article block background with CSS -->
+                <div class="text-wrap">
+                  <h3><a href="#">The folk singer murdered for his music</a></h3>
+                  <a class="category sports-category" href="#">CULTURE</a>
+                </div class="text-wrap">
+              </a>
+            </article>
+          </section>
+      </div>
+    </section>
+    <section class="news">
+      <h2><a href="#">News</a></h2>
+      <div class="news-articles">
+        <article>
+          <a href="#">
+            <img src="../images/kamla-biden.jpg" alt="Joe Biden and Kamala Harris Background" />
+            <h3 class="content-header">Biden and Harris say Trump has left US 'in tatters'</h3>
+            <p class="para">
+              Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.
+            </p>
+            <a href="#" class="content-catgeory">US ELECTION 2020</a>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="../images/woman-belarus.jpg" alt="Belarus Protests Background" />
+            <h3 class="content-header">Women form 'solidarity chains' in Belarus protests</h3>
+            <p class="para">
+              Women take to the streets of Minsk dressed in white as they demand an end to police brutality.
+            </p>
+            <a href="#" class="content-catgeory">EUROPE</a>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="../images/trump.jpg" alt="Trump's Windy Hair Background" />
+            <h3 class="content-header">Trump says low-pressure shower heads won't wash</h3>
+            <p class="para">
+           	 The US calls for rules to be eased after Donald Trump complained of issues washing his hair.
+          	</p>
+            <a href="#" class="content-catgeory">US & CANADA</a>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class="sports">
+      <h2><a href="#">Sports</a></h2>
+    </section>
+  </main>
+</body>
+</html>

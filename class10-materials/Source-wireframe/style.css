@@ -1,0 +1,282 @@
+*,
+*::before, 
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* 
+###########################
+
+BASE 
+
+###########################
+*/
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Sen', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #f5f9fc;
+  letter-spacing: -0.025rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4.1rem;
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: #2b4255;
+}
+
+
+header {
+  padding: 2rem;
+  border-bottom: 2px solid #e1e9f0;
+  position: relative;
+}
+
+main {
+  margin-top: 4rem;
+  padding: 2rem;
+  position: relative;
+}
+
+
+/* 
+###########################
+
+LAYOUT 
+
+###########################
+*/
+
+/* HEADER */
+
+#links,
+.btn-alt {
+  display: none;
+}
+
+#menu-btn {
+  max-width: 4rem;
+  max-height: 4rem;
+  position: absolute;
+  left: 2rem;
+}
+
+header h2 {
+  width: 100%;
+  text-align: center;
+  line-height: 4rem;
+}
+
+/* MAIN */
+
+.tagline {
+  display: inline-block;
+  color: #97aab9;
+  font-size: 1.4rem;
+}
+
+main h1 {
+  margin-top: 1.6rem;
+}
+
+main p {
+  margin-top: 1.6rem;
+}
+
+.form * {
+  display: block;
+}
+
+main .form input {
+  width: 100%;
+  background: #e1e9f0;
+  padding: 1rem;
+  border: none;
+  margin-top: 1.6rem;
+}
+
+.btn {
+  width: 100%;
+  background: #304659;
+  padding: 1.5rem 3rem;
+  border: none;
+  margin-top: 1.6rem;
+  line-height: 0;
+  color: white;
+  text-align: center;
+}
+
+
+.main-picture {
+  margin-top: 3.2rem;
+}
+
+.feature {
+   margin-top: 3.2rem;
+}
+
+.feature > * {
+  margin-top: 1.2rem;
+}
+
+.feature img {
+  max-width: 10%;
+}
+
+.secondary-section {
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+.secondary-section h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.secondary-section p {
+  margin-top: 3.2rem;
+}
+
+/* 
+###########################
+
+MODULE 
+
+###########################
+*/
+
+
+@media (min-width: 800px) {
+  
+  #menu-btn {
+    display: none;
+  }
+  
+  #links,
+  .btn-alt {
+    display:inline-block;
+  }
+  
+  
+  header {
+    line-height: 4rem;
+  }
+  
+  header h2 {
+    text-align: left;
+  }
+
+  .form * {
+    display: inline-block;
+  }
+  main .form input{
+      width: 60%;
+  }
+  .btn {
+    margin: 0;  
+    width: 30%;
+    text-align: center;
+    
+  }
+  
+  .btn-alt {
+    text-align: center;
+  }
+  
+  .header > * {
+    float: left;
+    width: 20%;
+  }
+  
+  #links {
+    text-align: center;
+    width: 60%;
+  }
+  
+  #links > * {
+    float: left;
+    width: 10rem;
+  }
+  
+  
+  .main-hero > * {
+    float: left;
+    width: 50%;
+  }
+  
+  #features > * {
+    float: left;
+    width: 50%;
+  }
+  .top-btn{
+      width: 10%;
+     
+  }
+}
+
+@media (min-width: 1100px) {
+  
+  p {
+    max-width: 60rem;
+  }
+  
+  #features {
+    clear: both;
+  }
+  
+  #features > * {
+    width: 25%;
+  }
+  
+  main,
+  .secondary-section {
+    margin: 7rem;
+  }
+  
+}
