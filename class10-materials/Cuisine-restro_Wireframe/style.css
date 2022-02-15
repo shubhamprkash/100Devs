@@ -1,0 +1,361 @@
+@import url('position.css');
+@import url('./colors.css');
+@import url('text.css');
+
+/******************************************
+/* MATERIAL ICONS
+/*******************************************/
+/* @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+
+/******************************************
+/* GOOGLE FONTS
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap');
+
+/******************************************
+/* BOX ICONS
+/*******************************************/
+@import url('https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css');
+
+/* Box Model Hack */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+
+    font: normal 400 62.5% 'Abhaya Libre', serif;
+}
+
+nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+.btn {
+    border: 0;
+    padding: 1rem;
+    color: white;
+    background-color: orange;
+}
+
+section,
+p, span, a, 
+i, input, button {
+    font: normal 500 1.6rem 'Montserrat', sans-serif;
+}
+span {
+    text-transform: capitalize;
+    color: var(--contrast-1);
+}
+.txt-sm {
+    font-size: 1.4rem;
+}
+
+h1, h1 > * {
+    display: block;
+    font: normal 700 7.5rem 'Abhaya Libre', serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+h2, h2 > * {
+    display: block;
+    font: normal 700 4.4rem 'Abhaya Libre', serif;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+h4 {
+    font-size: 2rem;
+}
+p {
+    line-height: 3rem;
+    padding: 1.6rem 0;
+}
+
+
+.pd-x-base {
+    padding-left: 10.6rem;
+    padding-right: 10.6rem;
+}
+
+/******************************************/
+/************ FOR TESTING ONLY ************/
+/******************************************/
+.br-red {
+    border: 1px solid red;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* MAIN */
+main > * {
+    position: relative;
+    z-index: 2;
+}
+main::before {
+    content: '';
+    background: url("./src/bg-main.jpg");
+    background-size: cover;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+    form{
+        box-shadow: 0px 2.4rem 1.8rem 1px rgba(0, 0, 255, .05);
+        margin: 2rem 0 4rem 0;
+    }
+    form > * {
+        float: left;
+    }
+
+    form > span[class*="material"] {
+        display: inline-block;
+        width: 5%;
+        font-size: 2.4rem;
+        padding: .75rem;
+        background: white;
+        color: gray;
+        border-radius: 5px 0 0 5px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+    }
+    form input {
+        width: 73%;
+        height: 100%;
+        padding: 1rem;
+        border: 0;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+    form button.btn {
+        width: 22%;
+        border-radius: 0 5px 5px 0;
+        border: 1px solid var(--contrast-1);
+    }
+    form button span:last-of-type {
+        font-size: 1.6rem;
+    }
+    form + ul > li i::before {
+        color: var(--contrast-1);
+    }
+    form + ul > li span {
+        font-weight: 600;
+    }
+
+
+/* ABOUT US */
+.about-us {
+    height: 100%;
+    z-index: 1;
+}
+    .about-us > section:nth-of-type(1) {
+        width: 33%;
+        background: rgba(255, 255, 255, 1) url('./src/Cake-bg.jpg') no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+        box-shadow: inset -25px -25px 5rem 5rem rgba(255, 255, 255, 1);
+    }
+    .about-us > section:nth-of-type(2) {
+        width: 47%;
+        height: 100%;
+        margin: 0 33%;
+        position: relative;
+        z-index: 99;
+    }
+    .about-us > section:nth-of-type(2) > * {
+        position: relative;
+        /* z-index: 99; */
+    }
+    .about-us > section:nth-of-type(3) {
+        background: url('./src/img-2.jpg') -50% -50% no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        box-shadow: inset 75px -55px 5rem 1rem rgba(255, 255, 255, 1);
+    }
+        .about-us a {
+            display: inline-block;
+            padding: 0;
+            border-radius: 5px;
+        }
+        .about-us a span:nth-of-type(1) {
+            float: left;
+            padding: 1rem;
+        }
+        .about-us span.bg-contrast-2 {
+            float: left;
+            padding: 1rem;
+            border-radius: 0 5px 5px 0;
+        }
+        .about-us span.bg-contrast-2 i {
+            vertical-align: middle;
+        }
+
+
+/* SPECIALTY */
+.capitalize, .tx-light{
+    color: aliceblue;
+}
+.specialty {
+    background: var(--accent-2);
+}
+    .specialty nav a {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--accent-1);
+    }
+    .specialty nav a.active {
+        color: var(--contrast-1);
+        border-bottom: 2px solid var(--contrast-1);
+    }
+    .card-sm {
+        width: 25%;
+        padding: 1rem;
+        float: left;
+    }
+        .card-sm-main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+            .card-sm-main img {
+                width: 100%;
+            }
+            .card-sm-main > section {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                transition: all .4s ease;
+            }
+            .card-sm-main:hover > section {
+                background: rgba(0, 0, 0, .3);
+                opacity: 1;
+            }
+    .carousel {
+        text-align: center;
+    }
+    .carousel span {
+        vertical-align: middle;
+        opacity: .4;
+    }
+    .carousel .selected {
+        font-size: 3.2rem;
+        vertical-align: middle;
+        opacity: 1;
+    }
+
+/* RESTAURANT SCHEDULE */
+    .opening-hours {
+        background: url('./src/bg-schedule.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 2;
+    }
+    .opening-hours > * {
+        position: relative;
+        z-index: 3;
+    }
+    .opening-hours::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(255, 255, 255, .9);
+        z-index: 1;
+    }
+    .opening-hours .phone > * {
+        display: block;
+    }
+        .phone span[class*="material"] {
+            font-size: 4rem;
+            color: var(--contrast-1);
+            padding-top: 2rem;
+        }
+        .phone a {
+            font: normal 700 2.4rem 'Abhaya Libre', serif;
+        }
+        .schedule {
+            float: left;
+        }
+        .schedule section.bold {
+            font-size: 2.4rem;
+            font-family: 'Abhaya Libre', serif;
+        }
+
+        .schedule-video > .play-prev,
+        .schedule-video > .play-next {
+            width: 20%;
+            height: 100%;
+        }
+        .schedule-video span {
+            font-size: 8rem;
+            color: var(--contrast-1);
+        }
+            .play-prev {
+                left: 0;
+            }
+                .play-prev span {
+                    left: 0;
+                }
+            .play-next {
+                right: 0;
+            }
+                .play-next span {
+                    right: 0;
+                }
+        
+        .schedule-video video {
+            width: 60%;
+            border: 1px solid var(--contrast-1);
+            box-shadow: 0px 2.4rem 1.8rem 1px rgba(0, 0, 50, .4);
+        }
+            .schedule-video > .video-img {
+                width: 60%;
+            }
+                .video-img video {
+                    width: 100%;
+                }
+
+/* REVIEWS */
+    .review-card img {
+        border-radius: 50%;
+        height: 10%;
+        width: 10%;
+    }
