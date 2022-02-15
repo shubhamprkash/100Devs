@@ -278,6 +278,11 @@ main::before {
         opacity: 1;
     }
 
+    .material-icons-outlined{
+
+        color: gold;
+    }
+
 /* RESTAURANT SCHEDULE */
     .opening-hours {
         background: url('./src/bg-schedule.png');
