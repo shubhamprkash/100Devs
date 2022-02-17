@@ -1,0 +1,421 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+  
+  font-size:62.5%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  
+  h1,h2,h3,h4,h5{
+    font-family:'Cinzel', serif;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  header {
+  height:70px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1900px;
+  margin:0 auto;
+  padding:0 150px;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  li{
+    display:inline-block;
+  }
+  header svg{
+    height:15px;
+    width:15px;
+  }
+  
+  header a{
+    text-decoration:none;
+    color:rgb(54, 53, 53);
+    font-size:0.85rem;
+    padding:0 20px;
+  }
+  header>section>a>span{
+    font-weight:bold;
+    padding:0 10px 10px 0;
+    vertical-align:text-top;
+  }
+  main{
+    background-image:url(./Images/hero.jpg);
+    background-size:cover;
+    background-position: center bottom;
+  }
+  main {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:1000px;  
+  }
+  
+  main > .left{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:300px;
+    height:fit-content;
+    margin:0 auto;
+  }
+  main h1{
+    font-size: 5.5rem;
+    color:white;
+    padding: 0 150px 40px 0px;
+     
+  }
+  
+  
+  main h3{
+   color:white;
+   font-size: 1.2rem;
+   padding-bottom:40px;
+   letter-spacing:0.1rem;
+  }
+  
+  .times{
+    transform: rotate(90deg);
+    
+  }
+  
+  .book a{
+    text-decoration:none;
+    color:white;
+    background:black;
+    padding:20px;
+    display:inline-block;
+    font-size:0.8rem;
+    font-weight: bold;
+  
+  }
+
+  .top-btn a{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    display:inline-block;
+    font-size:0.8rem;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  
+  .book span{
+    font-weight:bold;
+    padding:0 10px 10px 0;
+    vertical-align:text-top;
+    font-size:0.8rem;
+   
+  }
+  .bannerbox{
+    margin-top:50px;
+    background-color:black;
+    padding:40px 30px;
+    width:40%;
+  
+  }
+  .bannerbox h3+h3{
+    font-weight:bold;
+    line-height:2rem;
+  }
+  
+  .bannerbox > a{
+    text-decoration:none;
+    color:black;
+    background:white;
+    padding:20px;
+    display:inline-block;
+    font-size:0.8rem;
+  }
+  .bannerbox span{
+    font-weight:bold;
+    padding:0 10px 10px 0;
+    vertical-align:text-top;
+    font-size:0.8rem;
+    font-weight:bold;
+  }
+  
+  .threes{
+    display:flex;
+    justify-content:center;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 0;
+    gap:40px;
+  }
+  
+  .threes section{
+    text-align:center;
+  
+  }
+  
+  .threes h3{
+    font-size:1.15rem;
+    padding:30px;
+    font-weight:bold;
+  }
+  .threes p{
+    font-size:0.85rem;
+    color:rgb(129, 128, 128);
+    line-height:2;
+    padding:0 30px;
+  }
+  
+  .taupe{
+    background-color:#F3F4F6
+  }
+  .container{
+    max-width:1200px;
+    display:flex;
+    justify-content: center;
+    padding:100px 0;
+    gap: 70px;
+    margin: auto;
+  
+  }
+  .container > .left,
+  .container > .right{
+    width:50%
+  }
+  
+  .container > .left > h2{
+    font-size:2.75rem;
+    padding-bottom:40px;
+  }
+  .container p{
+    font-size:0.90rem;
+    color:rgb(129, 128, 128);
+    line-height:2;
+    margin-bottom:30px;
+    
+  }
+  
+  .container > .left a{
+    text-decoration:none;
+    color:white;
+    background:black;
+    padding:20px;
+    display:inline-block;
+    font-size:0.8rem;
+  
+  }
+  
+  .container > .left >a> span{
+    font-weight:bold;
+    padding:0 10px 10px 0;
+    vertical-align:text-top;
+    font-size:0.8rem;
+  }
+  
+  .container .right{
+    background-image:url(Images/Home3-Video.jpg);
+    background-size:cover;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stylers{
+    max-width:1200px;
+    text-align:center;
+    margin:70px auto;
+    
+  }
+  .stylers h2{
+    font-size:2.75rem;
+    
+  }
+  
+  .stylers > p{
+    font-size:2rem;
+    font-weight:bold;
+    line-height:2;
+    margin-bottom:40px;
+  }
+  
+  .lanias{
+    display:flex;
+    gap:20px;
+    
+  }
+  
+  .styler{
+    position:relative;
+  }
+  .styler >img{
+    width:100%; 
+  }
+  .styler >div{
+    background-color:black;
+    width:80%;
+    position:absolute;
+    bottom:-30px;
+    left:30px;
+  }
+  
+  .styler h3,
+  .styler p{
+    color:white;
+    font-size: 1.2rem;
+    line-height:2rem;
+  }
+  
+  .banner{
+    background-image:url(./Images/promo-banner.jpg);
+    background-size:cover;
+    background-position: center top;
+    max-width: 1200px;
+    margin:100px auto;
+  }
+  
+  .banner h5{
+    font-size:1.3rem;
+    padding:100px 0 20px 100px;
+  }
+  .banner h2{
+    padding:10px 0 30px 100px;
+    font-size:2.75rem;
+    width:50%;
+    line-height:1.4;
+  }
+  .banner h2>span{
+    font-size:3rem;
+    font-weight:bold;
+    
+  }
+  .banner a{
+    text-decoration:none;
+    color:white;
+    background:black;
+    padding:20px;
+    display:inline-block;
+    font-size:0.8rem;
+    margin:0 0 100px 100px;
+  
+  }
+  
+  .banner >a> span{
+    font-weight:bold;
+    padding:0 10px 10px 0;
+    vertical-align:text-top;
+    font-size:0.8rem;
+  }
+  
+  .lookbook{
+    max-width:1200px;
+    text-align:center;
+    margin:70px auto;
+  
+  }
+  .pics{
+    display:flex;
+    justify-content:center;
+  }
+  .lookbook .first,
+  .lookbook .second,
+  .lookbook .third{
+    width:31%;
+  }
+  .lookbook h2{
+    font-size:2.75rem;
+    
+  }
+  
+  .lookbook > p{
+    font-size:2rem;
+    font-weight:bold;
+    line-height:2;
+    margin-bottom:40px;
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  @media screen and (max-width: 1280px){
+  header a{
+    padding:0 5px;
+  }
+  
+  header{
+    padding: 0 50px;
+  }
+  .container{
+    padding:100px 20px;
+  }
+  }
+  
+  
+  @media screen and (max-width:1000px){
+    header{
+      padding:0 20px;
+    }
+    .container{
+      padding:100px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 800px){
+    .container > .left,
+  .container > .right{
+    width:100%;
+    height: max-content;
+  }
+  .container{
+    display:block;
+  }
+  }
+  
+  @media screen and (max-width:700px){
+    .threes{
+      display:block;
+  }
+  .lanias{
+    display:block;
+    margin-bottom:20px;
+   
+  }
+  .styler{
+    display:block;
+    position:relative;
+  }
+  .styler >div{
+    background-color:black;
+    display:block;
+    position:unset;
+    width:100%;
+    margin-bottom:30px;
+  }
+  .times{
+      visibility: none;
+  }
+  }
