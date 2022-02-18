@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+
 }
 
 /* Clear fix hack */
@@ -20,7 +21,9 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+/* html{
+  font-size: 62.5%;
+} */
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -30,18 +33,61 @@
 /*******************************************/
 
 /* Please make the someText 12px, moreText 16px, and lastText 27px */
-
+.someText{
+  font-size: 12px;
+}
+.moreText{
+  font-size: 16px;
+}
+.lastText{
+  font-size:27px;
+}
 
 /* Please double the font-size of someText, moreText, and lastText (still using px) */
 
+.someText{
+  font-size: 24px;
+}
+.moreText{
+  font-size: 32px;
+}
+.lastText{
+  font-size:54px;
+}
+/* Please set a base font-size on heyo, and make someText 12px, moreText 16px,
+ and lastText 27px BUT use ems instead of px */
 
-/* Please set a base font-size on heyo, and make someText 12px, moreText 16px, and lastText 27px BUT use ems instead of px */
-
+ .heyo{
+   font-size: 62.5%;
+ }
+ .someText{
+  font-size: 1.2em;
+}
+.moreText{
+  font-size: 1.6em;
+}
+.lastText{
+  font-size:2.7em;
+}
 
 /* Please double the size of someText, moreText, and lastText using ems, but only make one change */
-
+.someText{
+  font-size: 2.4em;
+}
+.moreText{
+  font-size: 3.2em;
+}
+.lastText{
+  font-size:5.4em;
+}
 
 /* Please wrap lastText in a new section with the class of utOh and give it a base font size of 40px */
 
+.utOh{
+font-size: 40px;
+}
 
 /* Please fix your doubling of lastText, buy converting to rems */
+.lastText{
+font-size: 2rem;
+}
