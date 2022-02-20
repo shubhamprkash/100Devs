@@ -20,7 +20,7 @@ img{
 }
 ul{
   width: 100px;
-  height: 200px;
+  /* height: 200px; */
   border: 3px solid black;
   margin: 0 auto;
   list-style: none;
@@ -42,4 +42,7 @@ li{
 }
 #blue{
   background: rgba(0,254,255);
+}
+#dark{
+  background: black;
 }
