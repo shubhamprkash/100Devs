@@ -19,20 +19,66 @@
             padding: 10%  10%;
             text-align: center;
         }
+        p{
+            margin-left: 5%;
+            padding: 1%;
+            border: solid red 3px;
+            width: max-content;
+        }
+        .flex-center{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+
+        }   
+
+        /* .para{
+            display:;
+        } */
+        
     </style>
 
 </head>
 <body>
     
 <Section class="task-one box">
+    <p>Variable Task 1</p>
     <h1 id="t1"></h1>
 </Section>
 <Section class="task-two box">
+    <p>Variable Task 2</p>
     <h1 id="t2"></h1>
 </Section>
-<Section class="task-three box">
+<!-- <Section class="task-three box">
+    <p>Variable Task 3</p>
     <h1 id="t3"></h1>
-</Section>
+</Section> -->
+
+<section class="box ">
+    <p>Function Task 1</p>
+    <h1 id="func-t1"></h1>
+    <h1 id="func-t1-2"></h1>
+</section>
+<section class="box ">
+    <p>Function Task 2</p>
+    <h1 id="func-t2"></h1>
+    <!-- <h1 id="func-t-2"></h1> -->
+</section>
+<section class="box flex-center">
+    <p class="para">Function Task 3</p>
+    <br/>
+    <label for="numberinput"> Enter the Number :</label>
+    <input type="number" id="numberinput" >
+    <br/>
+
+    <label for="powerinput">Enter the Power : </label>
+    <input type="number" id="powerinput">
+    <button onclick="pow">Submit</button>
+    <h1 id="func-t3"></h1>
+    <!-- <h1 id="func-t-2"></h1> -->
+</section>
 
     <script src="script.js"></script>
 </body>
