@@ -31,6 +31,12 @@ function weird(a,b,c,d){
 // and divide the third. If the value is greater then 25, 
 // console log "WE HAVE A WINNNA"
 
+function winna(a,b,c){
+    let result = (100 + a -b) /c;
+    if (result > 25){
+        console.log("We AHve a WINNA");
+    }
+}
 
 
 // Create a function that takes in a day of the week. If it is a weekend alert, 
@@ -38,8 +44,24 @@ function weird(a,b,c,d){
 // Handle capitilization and if the user does not enter a day of the week 
 // alert "Try again!"
 
-
+function dayOfWeek(day){
+    const dayOfWeek = day.toLowerCase();
+    if(dayOfWeek === 'saturday' || dayOfWeek === 'sunday'){
+        alert("Weekend baby!!!!")
+    }
+    else
+        alert("Nevermind it the regular week day.")
+}
 
 
 //*Loops*
-//Create a function that takes in a number. Console log all values from 1 to that number or greater, but count by 3
+//Create a function that takes in a number. 
+// Console log all values from 1 to that number or greater, 
+// but count by 3
+
+function logNum(num){
+    for(let i = 1; i <= num; i++){
+        console.log(i)
+    }
+}
+logNum(5)
