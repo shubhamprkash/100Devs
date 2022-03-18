@@ -9,28 +9,28 @@
 
 
 function checker(){
-    let age = document.querySelector("#danceDanceRevolution").value;
-    let msg;
-if (age<16){
-    msg = "You can not drive";
-}
-else if( age<18){
-    msg="You can't hate from outside the club, because they can't even get in";
-}
-else if (age < 21){
+        let age = document.querySelector("#danceDanceRevolution").value;
+        let msg;
+    if (age<16){
+        msg = "You can not drive";
+    }
+    else if( age<18){
+        msg="You can't hate from outside the club, because they can't even get in";
+    }
+    else if (age < 21){
 
-    msg ='You can not drink';
-}
-else if(age < 25 ){
-    msg = "can not rent cars affordably";
-}
- else if (age < 30 ){
-    msg="You can not rent fancy cars affordably";
-}
-else if (age >= 30){
-    msg="there is nothing left to look forward too";
-}
-console.log (msg);
+        msg ='You can not drink';
+    }
+    else if(age < 25 ){
+        msg = "can not rent cars affordably";
+    }
+    else if (age < 30 ){
+        msg="You can not rent fancy cars affordably";
+    }
+    else if (age >= 30){
+        msg="there is nothing left to look forward too";
+    }
+  console.log (msg);
 }
 
 document.querySelector('h1').addEventListener('click', checker);
