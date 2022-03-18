@@ -7,9 +7,10 @@
 //If under 30, tell them they can not rent fancy cars affordably
 //If under over 30, tell them there is nothing left to look forward too
 
-let age = document.querySelector("#danceDanceRevolution").value;
-let msg;
-function checker(age){
+
+function checker(){
+    let age = document.querySelector("#danceDanceRevolution").value;
+    let msg;
 if (age<16){
     msg = "You can not drive";
 }
@@ -26,16 +27,16 @@ else if(age < 25 ){
  else if (age < 30 ){
     msg="You can not rent fancy cars affordably";
 }
-else if (age > 30){
+else if (age >= 30){
     msg="there is nothing left to look forward too";
 }
-return msg;
+console.log (msg);
 }
 
 document.querySelector('h1').addEventListener('click', checker);
 
 
-console.log(msg);
+// console.log(msg);
 //--- Harder
 //On click of the h1
 //Take the value from the input
