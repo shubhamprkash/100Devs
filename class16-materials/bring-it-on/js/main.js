@@ -8,14 +8,14 @@ console.log(val);
 
 let something = 10;
 something += 10; 
-// alert(something);
+alert(something);
 
 
 // *Functions*
 // Create a function that subtracts 4 numbers and alerts the difference
 
 function suntractor(a,b,c,d){
-    // alert(a-b-c-d);
+    alert(a-b-c-d);
 }
 
 suntractor(90,80,70,60);
